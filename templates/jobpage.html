@@ -23,10 +23,11 @@
         <ol>
           {% for line in job.requirements.split("\n") %}
           <li>{{line}}</li>
-          {% endfor}
+          {% endfor %}
         </ol>
       <h4>Salary</h4>
       <p>{{job.currency}}{{job.salary}}</p>
+      {% include 'application_form.html' %}
     </div>
     {% include 'footer.html' %}
   </body>
